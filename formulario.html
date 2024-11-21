@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+
+</head>
+<body>
+
+    <h1>Solicita más información</h1>
+
+    <form action="/submit_form" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="tipo">Tipo de información que solicitas:</label><br>
+        <select id="tipo" name="tipo">
+            <option value="hospedaje">Hospedaje</option>
+            <option value="vuelo">Reservación de vuelo</option>
+            <option value="hotel">Reservación de hotel</option>
+            <option value="lugares">Sugerencias de lugares a visitar</option>
+        </select><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+
+    <p><a href="viajando.html">Volver a la página principal</a></p>
+
+</body>
+</html>
